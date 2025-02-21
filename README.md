@@ -21,6 +21,14 @@ Please complete the following steps:
 6. Ensure the pipeline runs successfully.
 
 ![img](/screenshots/example.png)
+![img](/screenshots/1_1.png)
+![img](/screenshots/1_2.png)
+![img](/screenshots/1_3.png)
+![img](/screenshots/1_4.png)
+![img](/screenshots/1_5.png)
+![img](/screenshots/1_6.png)
+![img](/screenshots/1_7.png)
+![img](/screenshots/1_8.png)
 
 ### Requirements
 
@@ -29,6 +37,13 @@ Please complete the following steps:
 - Clone the repository to your local machine using Git.
 - Initialize the repository with a README file directly in Azure DevOps, specifying the purpos of the repository.
 - Clone the repository to your local machine and verify that the README.md file exists and contains the correct information.
+
+![img](/screenshots/1_9.png)
+![img](/screenshots/1_10.png)
+![img](/screenshots/1_11.png)
+![img](/screenshots/1_12.png)
+![img](/screenshots/1_13.png)
+![img](/screenshots/1_14.png)
 
 ## Practical Task 2: Implement Branching and Merging
 
@@ -59,9 +74,9 @@ Please complete the following steps:
     - Navigate to Azure Pipelines and create a new pipeline.
     - Select the Azure Repos Git repository as the source.
     - Use the YAML pipeline editor to define the pipeline, including the following steps:
-        dotnet restore (for .NET) or npm install (for Node.js) to restore dependencies.
-        dotnet build (for .NET) or npm run build (for Node.js) to build the application.
-        dotnet test (for .NET) or a testing command for Node.js to run unit tests.
+        - dotnet restore (for .NET) or npm install (for Node.js) to restore dependencies.
+        - dotnet build (for .NET) or npm run build (for Node.js) to build the application.
+        - dotnet test (for .NET) or a testing command for Node.js to run unit tests.
 4. Run the Pipeline:
    - Save and run the pipeline.
    - Verify that the build pipeline completes successfully and check the build logs for any errors.
