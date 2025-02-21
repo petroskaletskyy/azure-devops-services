@@ -53,6 +53,14 @@ Please complete the following steps:
 - Create a pull request from feature-enhancement to main, including a description of the changes and why they are necessary.
 - Review the pull request and merge it into the main branch after resolving any conflicts that may arise.
 
+![img](/screenshots/2_1.png)
+![img](/screenshots/2_2.png)
+![img](/screenshots/2_3.png)
+![img](/screenshots/2_4.png)
+![img](/screenshots/2_5.png)
+![img](/screenshots/2_6.png)
+![img](/screenshots/2_7.png)
+
 ## Practical Task 3: Set Up Branch Policies and Code Review
 
 - Configure branch policies for the main branch in Azure Repos to require at least one reviewer for pull requests and to enforce a minimum number of successful builds (you can simulate this by using a mock build status if needed).
