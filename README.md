@@ -71,6 +71,12 @@ Please complete the following steps:
 - Address any comments or requested changes from the reviewer and update the pull request accordingly.
 - Merge the pull request into the main branch once it has been approved.
 
+![img](/screenshots/3_1.png)
+![img](/screenshots/3_2.png)
+![img](/screenshots/3_3.png)
+![img](/screenshots/3_4.png)
+![img](/screenshots/3_5.png)
+
 ## Practical Task 4: Create a Simple Build Pipeline in Azure DevOps
 
 1. Log in to Azure DevOps:
