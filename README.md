@@ -76,6 +76,8 @@ Please complete the following steps:
 ![img](/screenshots/3_3.png)
 ![img](/screenshots/3_4.png)
 ![img](/screenshots/3_5.png)
+![img](/screenshots/3_6.png)
+![img](/screenshots/3_7.png)
 
 ## Practical Task 4: Create a Simple Build Pipeline in Azure DevOps
 
@@ -94,6 +96,16 @@ Please complete the following steps:
 4. Run the Pipeline:
    - Save and run the pipeline.
    - Verify that the build pipeline completes successfully and check the build logs for any errors.
+
+![img](/screenshots/4_1.png)
+![img](/screenshots/4_2.png)
+![img](/screenshots/4_3.png)
+![img](/screenshots/4_4.png)
+![img](/screenshots/4_5.png)
+![img](/screenshots/4_6.png)
+![img](/screenshots/4_7.png)
+![img](/screenshots/4_8.png)
+![img](/screenshots/4_9.png)
 
 ## Practical Task 5: Set Up Continuous Deployment (CD) to Azure Web App
 
