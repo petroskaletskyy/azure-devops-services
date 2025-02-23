@@ -213,6 +213,14 @@ Please complete the following steps:
     - Save and run the pipeline to provision the infrastructure in Azure.
     - Verify that the resources are created as expected.
 
+![img](/screenshots/9_1.png)
+![img](/screenshots/9_2.png)
+![img](/screenshots/9_3.png)
+![img](/screenshots/9_4.png)
+![img](/screenshots/9_5.png)
+![img](/screenshots/9_6.png)
+![img](/screenshots/9_7.png)
+
 ## Practical Task 10: Integrate Azure Test Plans with CI/CD Pipelines
 
 1. Create a Test Plan:
