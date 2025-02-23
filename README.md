@@ -187,6 +187,12 @@ Please complete the following steps:
     - Save and run the pipeline to ensure that the infrastructure is provisioned correctly in Azure.
     - Verify that the resources are created in the Azure portal.
 
+![img](/screenshots/8_1.png)
+![img](/screenshots/8_2.png)
+![img](/screenshots/8_3.png)
+![img](/screenshots/8_4.png)
+![img](/screenshots/8_5.png)
+
 ## Practical Task 9: Implement Infrastructure as Code (IaC) with Terraform
 
 1. Create a Terraform Configuration:
