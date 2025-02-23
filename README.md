@@ -167,6 +167,12 @@ Please complete the following steps:
 5. Verify Dependency Management:
     - Run the pipeline and verify that the dependencies are correctly published to and restored from the feed.
 
+![img](/screenshots/7_1.png)
+![img](/screenshots/7_2.png)
+![img](/screenshots/7_3.png)
+![img](/screenshots/7_4.png)
+![img](/screenshots/7_5.png)
+
 ## Practical Task 8: Deploy Infrastructure as Code (IaC) with Bicep
 
 1. Create a Bicep File:
