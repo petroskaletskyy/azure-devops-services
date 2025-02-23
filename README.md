@@ -121,6 +121,12 @@ Please complete the following steps:
     - Save and run the release pipeline.
     - Verify that the application is successfully deployed and accessible via the web.
 
+![img](/screenshots/5_1.png)
+![img](/screenshots/5_2.png)
+![img](/screenshots/5_3.png)
+![img](/screenshots/5_4.png)
+![img](/screenshots/5_5.png)
+
 ## Practical Task 6: Implement CI/CD with GitHub and Azure Pipelines
 
 1. Create a GitHub Repository:
