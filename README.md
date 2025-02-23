@@ -145,6 +145,16 @@ Please complete the following steps:
     - Configure the pipeline to trigger automatically on every push to the main branch.
     - Verify that the pipeline triggers successfully and the application is deployed to Azure.
 
+![img](/screenshots/6_1.png)
+![img](/screenshots/6_2.png)
+![img](/screenshots/6_3.png)
+![img](/screenshots/6_4.png)
+![img](/screenshots/6_5.png)
+![img](/screenshots/6_6.png)
+![img](/screenshots/6_7.png)
+![img](/screenshots/6_8.png)
+![img](/screenshots/6_9.png)
+
 ## Practical Task 7: Use Azure Artifacts to Manage Dependencies
 
 1. Create an Azure Artifacts Feed:
