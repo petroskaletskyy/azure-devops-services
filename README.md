@@ -235,6 +235,13 @@ Please complete the following steps:
     - Trigger the pipeline and verify that it runs the tests and reports the results back to Azure Test Plans.
     - Ensure that any failed tests block the deployment process.
 
+![img](/screenshots/10_1.png)
+![img](/screenshots/10_2.png)
+![img](/screenshots/10_3.png)
+![img](/screenshots/10_4.png)
+![img](/screenshots/10_5.png)
+![img](/screenshots/10_6.png)
+
 ## Practical Task 11: Full CI/CD Pipeline with Infrastructure as Code, Testing, and Artifact Management
 
 1. Design the Application Architecture:
