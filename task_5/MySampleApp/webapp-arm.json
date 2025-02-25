@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "webAppName": {
+            "type": "string",
+            "defaultValue": "myappnodewebappdemo",
+            "metadata": {
+                "description": "WebApp name"
+            }
+        },
+        "servicePlanName": {
+            "type": "string",
+            "defaultValue": "myappwebappplan234",
+            "metadata": {
+                "description": "Service plan name"
+            }
+        }
+    },
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Web/serverfarms",
+            "apiVersion": "2022-03-01",
+            "name": "[parameters('servicePlanName')]",
+            "location": "[resourceGroup().location]",
+            "sku": {
+                "name": "F1",
+                "tier": "Free"
+            },
+            "kind": "linux",
+            "properties": {
+                "reserved": true
+            }
+        },
+        {
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2022-03-01",
+            "name": "[parameters('webAppName')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "siteConfig": {
+                    "linuxFxVersion": "NODE| 16-lts"
+                },
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('servicePlanName'))]"
+            },
+            "identity": {
+                "type": "SystemAssigned"
+            }
+        } 
+    ],
+    "outputs": {}
+}

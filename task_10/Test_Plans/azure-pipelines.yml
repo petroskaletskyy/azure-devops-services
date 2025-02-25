@@ -1,0 +1,50 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- main
+
+pool:
+  name: MyLinux
+  demands:
+    - agent.name -equals myAgent 
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '16.x'
+    displayName: 'Install Node.js'
+
+  - task: Npm@1
+    inputs:
+      command: ci
+      verbose: true
+    displayName: 'Install dependencies'  
+
+  - bash: |
+      mkdir -p $(Build.ArtifactStagingDirectory)/test-results
+    displayName: 'Create Test Results Directory'    
+            
+  - script: |
+      npm test
+    env:
+      JEST_JUNIT_OUTPUT_DIR: '$(Build.ArtifactStagingDirectory)/test-results'
+      JEST_JUNIT_OUTPUT_NAME: 'jest-results.xml' 
+    displayName: 'Run Jest Tests'   
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '$(Build.ArtifactStagingDirectory)/test-results/jest-results.xml'
+      mergeTestResults: true
+      publishRunAttachments: true
+    condition: succeededOrFailed()
+    displayName: 'Publish test results' 
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)/test-results'
+      ArtifactName: 'test-results'
+    displayName: 'Publist Test Artifacts' 

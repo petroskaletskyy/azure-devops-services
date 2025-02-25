@@ -1,0 +1,31 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- main
+
+pool:
+  name: MyLinux
+  demands:
+    - agent.name -equals myAgent
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+  displayName: 'Install dependencies'
+
+- script: |
+    npm run build
+  displayName: "Build"
+
+- script: |
+    npm install supertest --save-dev
+    npm test
+  displayName: "Run tests"
