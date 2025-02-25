@@ -241,6 +241,7 @@ Please complete the following steps:
 ![img](/screenshots/10_4.png)
 ![img](/screenshots/10_5.png)
 ![img](/screenshots/10_6.png)
+![img](/screenshots/10_7.png)
 
 ## Practical Task 11: Full CI/CD Pipeline with Infrastructure as Code, Testing, and Artifact Management
 
